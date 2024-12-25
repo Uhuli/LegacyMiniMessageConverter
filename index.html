@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Legacy to MiniMessage Converter</title>
+    <meta name="description" content="A simple website that translates legacy color codes into MiniMessage format.">
+    <meta name="author" content="Uhuli">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Legacy to MiniMessage Converter</h1>
+<textarea id="text" name="text" placeholder="Paste your legacy text here..."></textarea>
+<div class="theme-toggle">
+    <input type="checkbox" id="themeToggle" name="themeToggle">
+    <label for="themeToggle" class="theme-icon"></label>
+</div>
+<div class="settings">
+    <div class="setting">
+        <label for="concise">Concise MiniMessage</label>
+        <input type="checkbox" id="concise" name="concise">
+        <span class="sub">(&lt;u&gt; vs &lt;underlined&gt;)</span>
+    </div>
+    <div class="setting">
+        <label for="char">Formatting Character</label>
+        <select name="char" id="char">
+            <option value="&">&</option>
+            <option value="§">§</option>
+        </select>
+    </div>
+    <div class="setting">
+        <label for="rgb">Convert RGB</label>
+        <input type="checkbox" id="rgb" name="rgb" checked>
+        <span class="sub">(&amp;#RRGGBB to &lt;#RRGGBB&gt;)</span>
+    </div>
+    <!-- Additional settings can be added here -->
+</div>
+<div id="preview">Live Preview will appear here...</div>
+<button id="copyButton">Copy to Clipboard</button>
+</body>
+</html>
